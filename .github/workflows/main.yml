@@ -12,3 +12,6 @@ jobs:
 
     - name: Message One 
       run: echo "Hello, CI Workflow!"
+
+    - name: Message Two  
+      run: echo "Welcome to CI Workflow!"

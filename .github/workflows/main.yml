@@ -1,18 +1,17 @@
-name: Hello World!
+name: GitHub Actions Demo
 
-on:
-  push:
-    branches:
-      - main
-      # note that your "main" branch might be called main instead of master
+on: [push]
 
 jobs:
-  hello_world_job:
-    runs-on: ubuntu-20.04
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Say hello
-        run: |
-          echo "Hello World!"
-      - name: Now it is
-        run: |
-          date
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Message One 
+      run: echo "Hello, CI Workflow!"
+
+    - name: Message Two  
+      run: echo "Welcome to CI Workflow!"

@@ -1,0 +1,14 @@
+name: GitHub Actions Demo
+
+on: [push]
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Message One 
+      run: echo "Hello, CI Workflow!"
